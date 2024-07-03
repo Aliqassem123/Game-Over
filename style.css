@@ -1,0 +1,162 @@
+.w-10{
+    width: 50px;
+}
+
+.nav-bar{
+    background: #3A497B;
+    
+}
+
+body{
+    background-color: #010822;
+    font-family: "Nerko One", cursive;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-img{
+    width: 100%;
+    height:200px;
+    background-image: url(wraper.png);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    position: relative;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-nav {
+
+    --bs-nav-link-color: rgb(255, 255, 255);
+    --bs-nav-link-hover-color: rgb(194, 66, 7);
+    --bs-nav-link-disabled-color:rgb(255, 255, 255);
+  
+}
+.navbar-nav .nav-link.active  {
+    color:  rgb(194, 66, 7)
+}
+
+.card{
+    background-color: #031225;
+    border:  solid 1px #202327;
+}
+
+.btn-primary{
+    --bs-btn-bg:  #ff4500;
+    --bs-btn-hover-border-color: #ff4500;
+    --bs-btn-hover-bg: #ff4500;
+   --bs-btn-border-color: #ff4500;
+}
+.games-item img {
+    max-height: 30vh;
+
+}
+.games-item{
+    transform: scale(1); 
+transition: transform .5s;
+}
+.games-item:hover{
+    transform: scale(1.1);
+}
+
+.card-text{
+    color: #77797C;
+}
+.card-footer small{
+    background: #32383E;
+    color: #fff;
+    border-radius: 6px;
+  
+}
+
+
+.description-gama {
+    color: #fff;
+}
+
+.close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.close i{
+color: #B0B0B2;
+transition: all 0.3s;
+}
+
+
+.close:hover i{
+    color: orangered;
+}
+
+.item{
+    cursor: pointer;
+}
+
+.btn-outline-warning {
+    --bs-btn-color: #ff4500;
+    --bs-btn-border-color: #ff4500;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #ff4500;
+    --bs-btn-hover-border-color: #ff4500;
+    --bs-btn-active-bg: #ff4500;
+    --bs-btn-active-border-color: #ff4500;
+    --bs-btn-disabled-color: #ff4500;
+    --bs-btn-disabled-border-color: #ff4500;
+
+}
+
+
+      /*  */
+
+      .loading{
+        position: fixed;
+        background: #242323b7;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999999;
+      }
+      .loader{
+        position: relative;
+        font-size: 48px;
+        letter-spacing: 2px;
+        font-family: sans-serif;
+      }
+      .loader:before {
+        content: "Loading";
+        color: #fff;
+      }
+      .loader:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: #ff3d00;
+        border-radius: 50%;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        top: -70px;
+        animation: motion 3s ease-in-out infinite;
+      }
+    
+      @keyframes motion {
+        0%, 50%, 100% {
+          transform: translateX(0) scale(1);
+        }
+        25% {
+          transform: translateX(-100px) scale(0.3);
+        }
+        75% {
+          transform: translateX(100px) scale(0.3);
+        }
+      }
