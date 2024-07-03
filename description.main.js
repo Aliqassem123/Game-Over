@@ -10,6 +10,7 @@
         document.getElementById("btn").addEventListener("click", () => {
             document.querySelector("#games").classList.remove("d-none")
             document.querySelector(".description-gama").classList.add("d-none");
+            document.querySelector(".navbar").classList.remove("d-none");
          })
          
          this.getApiId(id);
