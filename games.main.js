@@ -64,6 +64,7 @@ getElement() {
     const details = new Description(idGame);
     document.querySelector("#games").classList.add("d-none");
     document.querySelector(".description-gama").classList.remove("d-none");
+  document.querySelector(".navbar").classList.add("d-none");
     
  }
 
